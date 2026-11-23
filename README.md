@@ -86,6 +86,3 @@ Computer-Health-Monitor/
 - Sorting data.
 - Logging and file operations.
 
-## Author
-
-Created as a beginner Python project to practise core Python concepts.
