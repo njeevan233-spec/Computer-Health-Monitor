@@ -1,88 +1,156 @@
 # Computer Health Monitor 🖥️
 
-A beginner-friendly Python project that checks computer disk space, folder sizes, and largest files. It generates a health report and saves a summary to a log file.
+## 📌 Project Overview
+
+Computer Health Monitor is a Python-based system monitoring tool designed to check computer health, analyze disk space, scan folder sizes, detect large files, and maintain execution history.
+
+The project is developed in two weeks, with Week 1 focusing on basic system monitoring and Week 2 introducing Object-Oriented Programming (OOP), configurable checks, and history tracking.
+
+## 🚀 Features
+
+- Disk Space Monitoring
+- Folder Size Analysis
+- Large File Detection
+- System Information Report
+- Total Files and Subfolder Count
+- Subfolder Size Analysis
+- Object-Oriented Programming (OOP)
+- JSON-Based Configuration
+- Automated Health Reports
+- Execution History Tracking
+
+## 🛠️ Technologies Used
+
+- Python 3
+- JSON
+- OS Module
+- Standard Python Libraries
+
+---
+
+# 📅 Week 1 – Computer Health Monitor
 
 ## Features
 
-- Displays total, used, and free disk space.
+- Displays computer system information.
+- Checks total, used, and free disk space.
 - Calculates folder size.
-- Finds the 5 largest files.
-- Converts bytes into readable units (KB, MB, GB).
-- Counts files by extension.
-- Displays disk health status.
-- Saves a timestamped summary to `health_log.txt`.
-- Handles invalid folder paths.
-- Uses only Python standard libraries.
+- Counts total files and subfolders.
+- Analyzes individual subfolder sizes.
 
-## Technologies Used
-
-- Python
-- `os`
-- `shutil`
-- `datetime`
-
-## How to Run
-
-1. Clone this repository:
-
-   ```bash
-   git clone https://github.com/YOUR-USERNAME/Computer-Health-Monitor.git
-   ```
-
-2. Navigate to the project folder:
-
-   ```bash
-   cd Computer-Health-Monitor
-   ```
-
-3. Run the program:
-
-   ```bash
-   python monitor.py
-   ```
-
-4. Enter the folder path you want to scan, or press Enter to scan the current directory.
-
-## Sample Output
+## 📊 Week 1 – Sample Output
 
 ```text
-COMPUTER HEALTH MONITOR
+============================================================
+                  COMPUTER HEALTH MONITOR
+============================================================
 
-DISK SPACE
-Total Disk Space: 475 GB
-Used Disk Space: 320 GB
-Free Disk Space: 155 GB
+Enter folder path to scan (Enter = current folder): [Folder Path]
+============================================================
+                    SYSTEM INFORMATION
+============================================================
 
-FOLDER INFORMATION
-Folder Size: 2.5 GB
+Report Date & Time : [Date and Time]
+Computer Name      : [Computer Name]
+Operating System   : Windows
+OS Version         : [OS Version]
+Python Version     : [Python Version]
+Scanned Folder     : [Folder Path]
 
-TOP 5 LARGEST FILES
-1. video.mp4 - 850 MB
-2. dataset.zip - 420 MB
+------------------------------------------------------------
+                     DISK SPACE REPORT
+------------------------------------------------------------
 
-HEALTH STATUS
-GOOD: Disk space is healthy.
+Total Disk Space : 474.37 GB
+Used Disk Space  : 97.18 GB
+Free Disk Space  : 377.19 GB
+Disk Usage       : 20.49%
+Free Space       : 79.51%
 
-Report saved to health_log.txt
+------------------------------------------------------------
+                      FOLDER SUMMARY
+------------------------------------------------------------
+
+Total Folder Size : 16.67 KB
+Total Files       : 7
+Total Subfolders  : 2
+
+------------------------------------------------------------
+                 SUBFOLDER SIZE ANALYSIS
+------------------------------------------------------------
 ```
 
-*The values shown above are examples.*
+---
 
-## Project Structure
+# 📅 Week 2 – Object-Oriented Computer Health Monitor
+
+## Features
+
+- Implemented Object-Oriented Programming (OOP).
+- Created a base class named `Check`.
+- Used inheritance for individual health checks.
+- Implemented `DiskSpaceCheck`, `FolderSizeCheck`, and `LargeFileCheck`.
+- Used `config.json` for configurable monitoring limits.
+- Stored execution history in `history.json`.
+- Generated automated health status reports.
+
+## 📊 Week 2 – Sample Output
+
+```text
+[FAIL] Disk Space: Free disk space: 79.23%
+
+[OK] Folder Size: .: 112.25 MB (OK)
+
+[WARN] Large Files: Files approaching limit:
+.\python-manager-26.4.msix (96.22 MB)
+
+============================================================
+
+Run saved successfully to history.json
+```
+
+---
+
+## 📂 Project Structure
 
 ```text
 Computer-Health-Monitor/
+│
 ├── monitor.py
-├── README.md
-└── health_log.txt
+├── config.json
+├── history.json
+├── health_log.txt
+└── README.md
 ```
 
-## Learning Objectives
+## ▶️ How to Run
 
-- Working with Python standard libraries.
-- File and folder handling.
-- Functions and return values.
-- Exception handling.
-- Sorting data.
-- Logging and file operations.
+1. Install Python 3.
+2. Clone or download this repository.
+3. Open the project folder in VS Code.
+4. Open the terminal.
+5. Execute the following command:
+
+```bash
+python monitor.py
+```
+
+## 🎯 Learning Outcomes
+
+- Python programming and functions
+- Object-Oriented Programming
+- Classes and inheritance
+- File handling
+- JSON configuration
+- System monitoring
+- Error handling
+- Logging and report generation
+
+## 👨‍💻 Author
+
+**Project:** Computer Health Monitor 🖥️
+
+**Duration:** Week 1 and Week 2
+
+**Technology:** Python
 
