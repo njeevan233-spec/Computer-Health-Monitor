@@ -1,0 +1,8 @@
+{
+    "min_free_percent": 101,
+    "max_folder_mb": 500,
+    "large_file_mb": 100,
+    "folders": [
+        "."
+    ]
+}
